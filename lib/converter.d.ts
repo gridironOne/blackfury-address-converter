@@ -16,5 +16,5 @@ export declare const ECH: {
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ethToEvmos: (ethAddress: string) => string;
+export declare const ethToEchelon: (ethAddress: string) => string;
 export declare const echelonToEth: (echelonAddress: string) => string;

@@ -71,9 +71,9 @@ export const ethermintToEth = (ethermintAddress: string) => {
 };
 
 
-export const ECH = bech32Chain('ECH', 'echelon');
+export const ECH = bech32Chain('echelon', 'echelon');
 
-export const ethToEvmos = (ethAddress:string) => {
+export const ethToEchelon = (ethAddress:string) => {
   let data = ETH.decoder(ethAddress);
   return ECH.encoder(data);
 }

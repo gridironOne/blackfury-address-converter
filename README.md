@@ -46,9 +46,9 @@ address = ETHERMINT.encoder(Buffer.from("e2d61e49ff8a9d724cc54d338d8076f878ac6b7
 
 ### ECH support
 ```ts
-import {ethToEvmos, echelonToEth} from "@hanchon/ethermint-address-converter"
+import {ethToEchelon, echelonToEth} from "@hanchon/ethermint-address-converter"
 
-let address = ethToEvmos("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652")
+let address = ethToEchelon("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652")
 // "echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw"
 
 let address = echelonToEth("echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw")
