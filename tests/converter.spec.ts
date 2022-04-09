@@ -1,4 +1,4 @@
-import { ETH, ETHERMINT, EVMOS, ethToEthermint, ethermintToEth, evmosToEth, ethToEvmos } from '../src/converter';
+import { ETH, ETHERMINT, ECH, ethToEthermint, ethermintToEth, echelonToEth, ethToEvmos } from '../src/converter';
 
 test('test decoders', () => {
   // ETH
@@ -27,12 +27,12 @@ test('test converters', () => {
   address = ethermintToEth("ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048")
   expect(address).toBe("0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71");
 
-  // EVMOS
-  address = evmosToEth("evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
+  // ECH
+  address = echelonToEth("echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
   expect(address).toBe("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
-  // ETH to EVMOS 
+  // ETH to ECH 
   address = ethToEvmos("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
-  expect(address).toBe("evmos1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
+  expect(address).toBe("echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
 })
 
 

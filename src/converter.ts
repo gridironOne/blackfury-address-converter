@@ -71,14 +71,14 @@ export const ethermintToEth = (ethermintAddress: string) => {
 };
 
 
-export const EVMOS = bech32Chain('EVMOS', 'evmos');
+export const ECH = bech32Chain('ECH', 'echelon');
 
 export const ethToEvmos = (ethAddress:string) => {
   let data = ETH.decoder(ethAddress);
-  return EVMOS.encoder(data);
+  return ECH.encoder(data);
 }
 
-export const evmosToEth = (evmosAddress: string) => {
-  let data = EVMOS.decoder(evmosAddress);
+export const echelonToEth = (echelonAddress: string) => {
+  let data = ECH.decoder(echelonAddress);
   return ETH.encoder(data);
 };
