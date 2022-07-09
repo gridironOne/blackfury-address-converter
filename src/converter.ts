@@ -58,15 +58,15 @@ const bech32Chain = (name: string, prefix: string) => ({
   name,
 });
 
-export const ETHERMINT = bech32Chain('ETHERMINT', 'ethm');
+export const ECHV = bech32Chain('echelonvaloper', 'echelonvaloper');
 
-export const ethToEthermint = (ethAddress: string) => {
+export const ethToEchelonv = (ethAddress:string) => {
   let data = ETH.decoder(ethAddress);
-  return ETHERMINT.encoder(data);
-};
+  return ECHV.encoder(data);
+}
 
-export const ethermintToEth = (ethermintAddress: string) => {
-  let data = ETHERMINT.decoder(ethermintAddress);
+export const echelonvToEth = (echelonAddress: string) => {
+  let data = ECHV.decoder(echelonAddress);
   return ETH.encoder(data);
 };
 

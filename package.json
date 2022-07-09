@@ -1,6 +1,6 @@
 {
-    "name": "ethermint-address-converter",
-    "version": "1.1.1",
+    "name": "echelon-address-converter",
+    "version": "1.1.2",
     "description": "Converter between ETH and Ethermint addresses",
     "license": "MIT",
     "repository": "echelonfoundation/ethermint-address-converter",

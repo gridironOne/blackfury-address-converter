@@ -4,13 +4,13 @@ export declare const ETH: {
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ETHERMINT: {
+export declare const ECHV: {
     decoder: (data: string) => Buffer;
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ethToEthermint: (ethAddress: string) => string;
-export declare const ethermintToEth: (ethermintAddress: string) => string;
+export declare const ethToEchelonv: (ethAddress: string) => string;
+export declare const echelonvToEth: (echelonAddress: string) => string;
 export declare const ECH: {
     decoder: (data: string) => Buffer;
     encoder: (data: Buffer) => string;
