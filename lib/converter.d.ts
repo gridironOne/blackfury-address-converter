@@ -4,17 +4,17 @@ export declare const ETH: {
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ECHV: {
+export declare const BLACKV: {
     decoder: (data: string) => Buffer;
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ethToEchelonv: (ethAddress: string) => string;
-export declare const echelonvToEth: (echelonAddress: string) => string;
-export declare const ECH: {
+export declare const ethToBlackfuryv: (ethAddress: string) => string;
+export declare const blackvToEth: (blackAddress: string) => string;
+export declare const BLACK: {
     decoder: (data: string) => Buffer;
     encoder: (data: Buffer) => string;
     name: string;
 };
-export declare const ethToEchelon: (ethAddress: string) => string;
-export declare const echelonToEth: (echelonAddress: string) => string;
+export declare const ethToBlackfury: (ethAddress: string) => string;
+export declare const blackfuryToEth: (blackAddress: string) => string;

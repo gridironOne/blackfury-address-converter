@@ -58,27 +58,27 @@ const bech32Chain = (name: string, prefix: string) => ({
   name,
 });
 
-export const ECHV = bech32Chain('echelonvaloper', 'echelonvaloper');
+export const BLACKV = bech32Chain('blackvaloper', 'blackvaloper');
 
-export const ethToEchelonv = (ethAddress:string) => {
+export const ethToBlackfuryv = (ethAddress:string) => {
   let data = ETH.decoder(ethAddress);
-  return ECHV.encoder(data);
+  return BLACKV.encoder(data);
 }
 
-export const echelonvToEth = (echelonAddress: string) => {
-  let data = ECHV.decoder(echelonAddress);
+export const blackvToEth = (blackAddress: string) => {
+  let data = BLACKV.decoder(blackAddress);
   return ETH.encoder(data);
 };
 
 
-export const ECH = bech32Chain('echelon', 'echelon');
+export const BLACK = bech32Chain('black', 'black');
 
-export const ethToEchelon = (ethAddress:string) => {
+export const ethToBlackfury = (ethAddress:string) => {
   let data = ETH.decoder(ethAddress);
-  return ECH.encoder(data);
+  return BLACK.encoder(data);
 }
 
-export const echelonToEth = (echelonAddress: string) => {
-  let data = ECH.decoder(echelonAddress);
+export const blackfuryToEth = (blackAddress: string) => {
+  let data = BLACK.decoder(blackAddress);
   return ETH.encoder(data);
 };

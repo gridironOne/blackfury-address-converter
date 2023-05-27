@@ -1,4 +1,4 @@
-import { ETH, ETHERMINT, ECH, ethToEthermint, ethermintToEth, echelonToEth, ethToEchelon } from '../src/converter';
+import { ETH, ETHERMINT, BLACK, ethToEthermint, ethermintToEth, blackfuryToEth, ethToBlackfury } from '../src/converter';
 
 test('test decoders', () => {
   // ETH
@@ -27,12 +27,12 @@ test('test converters', () => {
   address = ethermintToEth("ethm1uttpuj0l32whynx9f5ecmqrklpu2c6m3973048")
   expect(address).toBe("0xe2D61e49ff8a9d724CC54d338D8076F878aC6b71");
 
-  // ECH
-  address = echelonToEth("echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
+  // BLACK
+  address = blackfuryToEth("black1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
   expect(address).toBe("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
-  // ETH to ECH 
-  address = ethToEchelon("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
-  expect(address).toBe("echelon1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
+  // ETH to BLACK 
+  address = ethToBlackfury("0x14574a6DFF2Ddf9e07828b4345d3040919AF5652");
+  expect(address).toBe("black1z3t55m0l9h0eupuz3dp5t5cypyv674jj7mz2jw");
 })
 
 
